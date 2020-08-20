@@ -1,4 +1,19 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Assignment Details
+## To run react app
+For client side : **npm run start**.
+
+For server side : **npm run ssr**.
+
+## Details
+Used redux to fetch data from api. Replicate the navbar from the provided link.
+
+Created two route one for home and another one for brand.
+Split the component on the basis of pages and which are same for both the pages are in common folder.
+
+
+
+
+
 
 ## Available Scripts
 
