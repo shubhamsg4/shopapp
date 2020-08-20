@@ -1,42 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .MoreAboutBrands h3 {font-size: 22px;}
 .MoreAboutBrands h2 {font-size: 22px;}
 .MoreAboutBrands p {font-size:12px;}
@@ -86,10 +47,10 @@ footer.footer-arya ul li a:hover { color:#333; text-decoration: none;}
 .DownloadSMSform .formFild { position: relative; }
 .DownloadSMSform .btn { padding: .2rem .75rem; font-size: 1rem; border-color: #ccc; position: absolute; right: 0; top:1px;}
 .br-0 { border: 0 !important; }
-footer.footer-arya ul.payment-logos {display: inline-block; border: 0; margin: 0; padding: }
-/* footer.footer-arya ul.payment-logos li { font-size: 0; float: left; text-indent: -9999px; margin:10px 0 0 10px; background-image: url(../images/spritesheet.png); background-position: 0 -60px; width: 67px; height: 40px; } */
+footer.footer-arya ul.payment-logos {display: inline-block; border: 0; margin: 0; padding:0 }
+footer.footer-arya ul.payment-logos li { font-size: 0; float: left; text-indent: -9999px; margin:10px 0 0 10px; background-image: url(../images/spritesheet.png); background-position: 0 -60px; width: 67px; height: 40px; }
 footer.footer-arya ul.payment-logos .visa { background-position: -67px -100px; }
-footer.footer-arya ul ul.payment-logos .mastercard { background-position: -267px -200px; }
+footer.footer-arya ul.payment-logos .mastercard { background-position: -267px -200px; }
 footer.footer-arya ul.payment-logos .diners-club { background-position: 0 -140px;}
 footer.footer-arya ul.payment-logos .american-express { background-position: -267px -120px; }
 footer.footer-arya ul.payment-logos .rupay { background-position: -200px -120px;}
@@ -147,5 +108,4 @@ footer.footer-arya {padding-top: 0}
 .footer-arya .col { flex-basis: inherit; -webkit-box-flex: inherit; -ms-flex-positive: inherit; flex-grow: inherit; }
 .footerLast { margin-top: -1px; font-size: 11px; }
 }
-
 

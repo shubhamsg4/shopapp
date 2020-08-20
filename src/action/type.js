@@ -1,0 +1,2 @@
+export const NAVDATA='NAVDATA';
+export const NAVDATA_ERROR='NAVDATA_ERROR';
