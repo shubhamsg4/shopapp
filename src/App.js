@@ -1,24 +1,19 @@
-import React, { Fragment } from "react";
+import React from "react";
 import "./App.css";
 import store from "./store";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {  Route,Switch } from "react-router-dom";
 import { Provider } from "react-redux";
-import HomePage from "./components/home/HomePage"
-import BrandPage from "./components/brand/BrandPage";
+import routes from "./routes";;
 
 function App() {
   return (
-    <Provider store={store}>
-      <Router>
-        <Fragment>
-          <Route exact path="/" component={HomePage} />
-          <Switch>
-            <Route exact path="/home" component={HomePage} />
-            <Route exact path="/brand" component={BrandPage} />
-          </Switch>
-        </Fragment>
-      </Router>
-    </Provider>
+      <div>
+        <Switch>
+          {routes.map((route, i) => (
+            <Route key={i} {...route} />
+          ))}
+        </Switch>
+      </div>
   );
 }
 

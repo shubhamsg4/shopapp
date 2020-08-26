@@ -86,7 +86,6 @@ footer.footer-arya ul li a:hover { color:#333; text-decoration: none;}
 .DownloadSMSform .formFild { position: relative; }
 .DownloadSMSform .btn { padding: .2rem .75rem; font-size: 1rem; border-color: #ccc; position: absolute; right: 0; top:1px;}
 .br-0 { border: 0 !important; }
-footer.footer-arya ul.payment-logos {display: inline-block; border: 0; margin: 0; padding: }
 /* footer.footer-arya ul.payment-logos li { font-size: 0; float: left; text-indent: -9999px; margin:10px 0 0 10px; background-image: url(../images/spritesheet.png); background-position: 0 -60px; width: 67px; height: 40px; } */
 footer.footer-arya ul.payment-logos .visa { background-position: -67px -100px; }
 footer.footer-arya ul ul.payment-logos .mastercard { background-position: -267px -200px; }

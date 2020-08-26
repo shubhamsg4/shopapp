@@ -1,5 +1,6 @@
 /*jslint browser: true*/
 /* Nav */
+import $ from 'jquery'
 $(document).ready(function(){
     $("#desktop-hamburger, #mobile-hamburger").click(function(){
         $("body").toggleClass("open-nav");
