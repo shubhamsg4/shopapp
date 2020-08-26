@@ -1,6 +1,5 @@
 /*jslint browser: true*/
 /* Nav */
-import $ from 'jquery'
 $(document).ready(function(){
     $("#desktop-hamburger, #mobile-hamburger").click(function(){
         $("body").toggleClass("open-nav");
@@ -22,12 +21,12 @@ $(function() {
   $(".button").on("click", function() {
     var $button = $(this);
     var oldValue = $button.parent().find("input").val();
-    if ($button.text() == "+") {
+    if ($button.text() === "+") {
       var newVal = parseFloat(oldValue) + 1;
     } else {
        // Don't allow decrementing below zero
       if (oldValue > 0) {
-        var newVal = parseFloat(oldValue) - 1;
+        newVal = parseFloat(oldValue) - 1;
         } else {
         newVal = 0;
       }

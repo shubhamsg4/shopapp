@@ -21,7 +21,17 @@ app.use(express.static("public"));
 
 
 
-app.get("*", (req, res) => {  
+app.get("*", (req, res,next) => { 
+
+  const promises = routes.reduce((acc, route) => {
+    if (matchPath(req.url, route) && route.component && route.component.initialAction) {
+      acc.push(Promise.resolve(store.dispatch(route.component.initialAction())));
+    }
+    return acc;
+  }, []);
+
+  Promise.all(promises)
+    .then(() => {
       const context = {};
       const markup = renderToString(
         <Provider store={store}>
@@ -45,8 +55,6 @@ app.get("*", (req, res) => {
            
           </head>
           <body>
-          <script src="/js/custom.js" defer></script>
-            <script src="/js/owl.carousel.js" defer></script>
             <div id="root">${markup}</div>
              
           </body>
@@ -209,6 +217,8 @@ owll.owlCarousel({
         </html>
       `);
     })
+    .catch(next);
+})
 
  app.listen(PORT, () => {
   console.log(`App launched on ${PORT}`);
